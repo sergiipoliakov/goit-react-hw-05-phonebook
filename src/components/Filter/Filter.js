@@ -24,6 +24,7 @@ Filter.defaultProps = {
 
 Filter.propTypes = {
   value: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
 
   onChangeFilter: PropTypes.func,
 };

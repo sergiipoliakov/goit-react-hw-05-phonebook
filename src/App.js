@@ -88,7 +88,7 @@ export default class App extends Component {
         <CSSTransition
           in={contacts.length > 1}
           timeout={500}
-          classNames="Layout-filter-slideIn"
+          classNames="filter-slideIn"
           unmountOnExit
         >
           <Filter value={filter} onChangeFilter={this.changeFilter} />

@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
+import Title from '../Title/Title';
 import { CSSTransition } from 'react-transition-group';
 
-import './Layout.css';
+import styles from './Layout.module.css';
 
 const Layout = ({ children }) => (
-  <div className="Layout">
+  <div className={styles.layout}>
     <CSSTransition
       in={true}
       appear={true}
       timeout={500}
-      classNames="Layout-title-slideIn"
+      classNames={styles}
       unmountOnExit
     >
-      <h1 className="Layout-title">Phonebook</h1>
+      <Title label="Phonebook" />
     </CSSTransition>
     {children}
   </div>

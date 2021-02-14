@@ -34,3 +34,21 @@
 .form-input:focus {
   border: 1px solid #2b32b2;
 }
+
+.form-title-slideIn-enter {
+  transform: translateX(-100%);
+}
+
+.form-title-slideIn-enter-active {
+  transform: translateX(0);
+  transition: transform 500ms linear;
+}
+
+.form-title-slideIn-exit {
+  transform: translateX(0);
+  transition: transform 500ms linear;
+}
+
+.form-title-slideIn-exit-active {
+  transform: translateX(-100%);
+}

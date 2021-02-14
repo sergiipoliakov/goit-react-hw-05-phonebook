@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import Button from '../Button/Button';
-import './ContactListItem.css';
+import styles from './ContactListItem.module.css';
 
 const ContactListItem = ({ id, name, number, onRemove }) => (
-  <li key={id} className="ContactList-item">
-    <p className="ContactList-text">{name}: </p>
-    <p className="ContactList-text">{number}</p>
-    <div className="ContactList-actions">
+  <li key={id} className={styles.item}>
+    <p className={styles.name}>{name}: </p>
+    <div className={styles.actions}>
+      <p className={styles.number}>{number}</p>
       <Button
         label="Delete"
         type="button"

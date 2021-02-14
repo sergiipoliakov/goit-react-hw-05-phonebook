@@ -26,3 +26,21 @@
   transform: scale(0.1);
   transition: all 250ms linear;
 }
+
+.ContactList-title-slideIn-enter {
+  transform: translateX(-100%);
+}
+
+.ContactList-title-slideIn-enter-active {
+  transform: translateX(0);
+  transition: transform 500ms linear;
+}
+
+.ContactList-title-slideIn-exit {
+  transform: translateX(0);
+  transition: transform 500ms linear;
+}
+
+.ContactList-title-slideIn-exit-active {
+  transform: translateX(-100%);
+}

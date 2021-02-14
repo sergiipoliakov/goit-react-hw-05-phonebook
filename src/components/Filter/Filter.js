@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import './Filter.css';
-import { CSSTransition } from 'react-transition-group';
 
 export default function Filter({ value, onChangeFilter }) {
   return (

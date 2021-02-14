@@ -13,5 +13,5 @@
 
 .Layout-filter-slideIn-exit-active {
   transform: translateX(100%);
-  transition: all 250ms linear;
+  transition: all 500ms linear;
 }

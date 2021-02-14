@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import ContactForm from './components/ContactForm/ContactForm';
 import Filter from './components/Filter/Filter';
 import ContactList from './components/ContactList/ContactList';
+
 import { CSSTransition } from 'react-transition-group';
 
 export default class App extends Component {
@@ -83,17 +84,7 @@ export default class App extends Component {
     return (
       <Layout>
         <ContactForm onAddContact={this.addContact} contacts={contacts} />
-        {contacts.length > 0 && (
-          <CSSTransition
-            in={true}
-            appear={true}
-            timeout={500}
-            classNames="Layout-title-slideIn"
-            unmountOnExit
-          >
-            <h1 className="contacts-title">Contacts</h1>
-          </CSSTransition>
-        )}
+
         <CSSTransition
           in={contacts.length > 1}
           timeout={500}
